@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+}
+body{
+    width: 100%;
+    background-color: white;
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* NAVABAR LEFT SIDE */
+.vertical-left{
+    display: block;
+    width: 17%;
+    float: left;
+    background-color: #f5f8ff;
+    height: 100vh;
+    
+}
+.vertical-left li{
+    display: block;
+    margin-left: 2em;
+    line-height: 1.5em;
+    line-height: 2em;
+}
+
+.vertical-left li:nth-child(6){
+    margin-bottom: 1.5em;
+}
+/* HOVER FOR NAVBAR LEFT SIDE */
+.vertical-left li a:hover{
+    display: block;
+    transform: translate(3px, -3px);
+    color: rgb(67, 187, 107);
+}
+/* MAIN ARTICLE */
+article{
+    display: block;
+    float: left;
+    width: 62%;
+}
+article nav{
+    display: block;
+}
+article nav ul{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+}
+article nav li{
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+/* HOVER FOR ARTICLE  */
+article li a::after/*, a::before*/{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(67, 187, 107);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -15px;
+}
+article li a:hover::after/*, a:hover::before*/{
+    width: 50%;
+    transition: all .2s linear;
+}
+article li a:hover{
+    color: rgb(67, 187, 107);  
+}
+/* ARTICLE TASK DESC */
+article .task-desc{
+    display: block;
+    float: left;
+    width: 100%;
+}
+article .desc input{
+    margin-right: .5em;
+}
+article h1{
+    margin-left: .5em;
+}
+article .desc{
+    margin: 1em 0 1.5em 1em;
+}
+/* HOVER FOR TASK DESCRIPTION */
+article .desc:hover{
+    transform: translate(3px);
+}
+/* HORIZONTAL LINE */
+article hr{
+    color: rgb(204, 202, 202);
+    width: 96.4%;
+    margin: 3em auto .8em auto;
+}
+/* VERTICAL LINE */
+.v_line{
+    border-left: 2px solid rgb(204, 202, 202);
+    height: 754px;
+    display: block;
+    float: left;
+    width: 1%;
+    margin-top: 2em;
+}
+/* ASIDE SECTION */
+aside{
+    display: block;
+    float: left;
+    width: 20%;
+}
+aside h2{
+    margin-bottom: 1em;
+}
+aside .first{
+    background-color: #f6fad6;
+}
+aside .second{
+    background-color: #c6f7b7;
+}
+aside .third{
+    background-color: #f8cdcd;
+}
+aside .fourth{
+    background-color: #cff3fa;
+}
+aside .fifth{
+    background-color: #f0daf5;
+}
+aside .sixth{
+    background-color: #f6fad6;
+}
+aside .sched{
+    padding: 1.2em;
+    margin-bottom: 1em;
+    width: 90%;
+    border-radius: .8em;
+}
+/* HOVER FOR ASIDE SCHEDULE */
+aside .sched:hover{
+    transform: translate(5px , -5px);
+    
+}
+/* FOOTER SECTION */
+footer{
+    clear: left;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 12em;
+    background-color: rgb(190, 187, 187);
+}
+footer nav li{
+    list-style: none;
+    line-height: 1.5em;
+}
+footer li a:hover{
+    color: rgb(42, 124, 69);
+    text-decoration: underline;
+}
+/* THIS IS FOR ALL TO HAVE A PADDING IN ITS TOP */
+.vertical-left ul, article, aside{
+    margin-top: 2em;
+}
+/* FOR ALL LINKS */
+li a{
+    color: black;
+    text-decoration: none;
+}
+/* HEADING */
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .2em;
+    font-size: 1.7em;
+}
+h3{
+    font-size: 17px;
+}
+
+
